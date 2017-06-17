@@ -217,6 +217,7 @@ namespace facebook_search
                     scrol = scrol + 10;
                     webBrowser1.Navigate("javascript: window.scroll(0," + scrol.ToString() + ")");
                 }
+                Thread.Sleep(100);
                 timer1.Enabled = true;
             }
             else this.Close();
@@ -437,6 +438,7 @@ namespace facebook_search
                         scrol = scrol + 10;
                     }
                     webBrowser1.Navigate("javascript: window.scroll(0," + scrol.ToString() + ")");
+                    Thread.Sleep(100);
                     k = k * (-1);
                     Cursor.Position = new Point(this.Left + left_x, this.Top + Convert.ToInt32(textBox5.Text) + k);//440
                     timer4.Enabled = true;
